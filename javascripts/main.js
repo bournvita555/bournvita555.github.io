@@ -20,7 +20,7 @@
  */
  function resetValues(){
  	var frm = document.getElementsByName('test')[0];
- 	frm.submit(); // Submit
+ 	//frm.submit(); // Submit
  	frm.reset();  // Reset
  	//return false; // Prevent page refresh
  }
