@@ -17,58 +17,57 @@
         $('#main_content').headsmart()
       })
     </script>
+    <script src="mobilefirst.js"></script>
+    <link rel="stylesheet" type="text/css" href="mobilefirst.css">
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="magic.css">
+    <link href="hover-min.css" rel="stylesheet" media="all">
+    <div class="wrapper">
+    <h1>Eligibility Checker!!</h1>
+    <script>
+    $('.wrapper').hover(function () {
+      $(this).addClass('magictime puffIn');
+    });
+    </script>
     <title>Bournvita555.GitHub.io by bournvita555</title>
   </head>
-
   <body>
-    <a id="forkme_banner" href="https://github.com/bournvita555">View on GitHub</a>
-    <script src="mobilefirst.js"></script>
-<link rel="stylesheet" type="text/css" href="mobilefirst.css">
-<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
-<link rel="stylesheet" type="text/css" href="magic.css">
-<link href="hover-min.css" rel="stylesheet" media="all">
-<div class="wrapper">
-<h1>Eligibility Checker!!</h1>
-<script>
-$('.wrapper').hover(function () {
-  $(this).addClass('magictime puffIn');
-});
-</script>
-<h3 class="form-title">Check your eligibility!</h3>
-<form name="test" method="post" autocomplete="off">
-  <ul id="contact">
-  <li class="clear">
-    <label for="egrade">Enter English Grade<span class="hint"> Options: A+, A, B+, B, C+, C, D+, D, E, N</span></label>
-    <input id="egrade" type="text" />
-  </li>
-  <li class="clear">
-    <label for="ngrade">Enter Nepali Grade<span class="hint"> Options: A+, A, B+, B, C+, C, D+, D, E, N</span></label>
-    <input id="ngrade" type="text" />
-  </li>
-  <li class="clear">
-    <label for="mgrade">Enter Math Grade <span class="hint"> Options: A+, A, B+, B, C+, C, D+, D, E, N</span></label>
-    <input id="mgrade" type="text" />
-  </li>
-  <li class="clear">
-    <label for="scigrade">Enter Science Grade<span class="hint"> Options: A+, A, B+, B, C+, C, D+, D, E, N</span></label>
-    <input id="scigrade" type="text" />
-  </li>
-  <li class="clear">
-    <label for="socgrade">Enter Social Grade<span class="hint"> Options: A+, A, B+, B, C+, C, D+, D, E, N</span></label>
-    <input id="socgrade" type="text" />
-  </li>
-  <li class="clear">
-    <label for="gpa">Enter GPA<span class="hint"> GPA are in number form</span></label>
-    <input id="gpa" type="text" onkeypress="return isNumberKey(event)" />
-  </li>
-  <footer>
-    <p class="half" id="demo"style="text-align:left">Your answer will appear here!!!</p>
-    <button class="hvr-hang" type="button" onclick="checkFunction()">Submit</button>
-    <button class="hvr-hang" type="button" onclick="resetValues()">Reset</button>
-
-  </footer>
-</ul>
-</form>
-</div>
-</body>
+  <a id="forkme_banner" href="https://github.com/bournvita555">View on GitHub</a>
+  <h3 class="form-title">Check your eligibility!</h3>
+  <form name="test" method="post" autocomplete="off">
+    <ul id="contact">
+    <li class="clear">
+      <label for="egrade">Enter English Grade<span class="hint"> Options: A+, A, B+, B, C+, C, D+, D, E, N</span></label>
+      <input id="egrade" type="text" />
+    </li>
+    <li class="clear">
+      <label for="ngrade">Enter Nepali Grade<span class="hint"> Options: A+, A, B+, B, C+, C, D+, D, E, N</span></label>
+      <input id="ngrade" type="text" />
+    </li>
+    <li class="clear">
+      <label for="mgrade">Enter Math Grade <span class="hint"> Options: A+, A, B+, B, C+, C, D+, D, E, N</span></label>
+      <input id="mgrade" type="text" />
+    </li>
+    <li class="clear">
+      <label for="scigrade">Enter Science Grade<span class="hint"> Options: A+, A, B+, B, C+, C, D+, D, E, N</span></label>
+      <input id="scigrade" type="text" />
+    </li>
+    <li class="clear">
+      <label for="socgrade">Enter Social Grade<span class="hint"> Options: A+, A, B+, B, C+, C, D+, D, E, N</span></label>
+      <input id="socgrade" type="text" />
+    </li>
+    <li class="clear">
+      <label for="gpa">Enter GPA<span class="hint"> GPA are in number form</span></label>
+      <input id="gpa" type="text" onkeypress="return isNumberKey(event)" />
+    </li>
+    <footer>
+      <p class="half" id="demo"style="text-align:left">Your answer will appear here!!!</p>
+      <button class="hvr-hang" type="button" onclick="checkFunction()">Submit</button>
+      <button class="hvr-hang" type="button" onclick="resetValues()">Reset</button>
+  
+    </footer>
+  </ul>
+  </form>
+  </div>
+  </body>
 </html>
