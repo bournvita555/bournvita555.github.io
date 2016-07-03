@@ -20,15 +20,15 @@
     <ul id="contact">
     <li class="clear">
       <label for="egrade">Enter English Grade<span class="hint"> Options: A+, A, B+, B, C+, C, D+, D, E, N</span></label>
-      <input id="egrade" type="text" />
+      <input id="egrade" type="text" tabindex="1" />
     </li>
     <li class="clear">
       <label for="ngrade">Enter Nepali Grade<span class="hint"> Options: A+, A, B+, B, C+, C, D+, D, E, N</span></label>
-      <input id="ngrade" type="text" />
+      <input id="ngrade" type="text" tabindex="2" />
     </li>
     <li class="clear">
       <label for="mgrade">Enter Math Grade <span class="hint"> Options: A+, A, B+, B, C+, C, D+, D, E, N</span></label>
-      <input id="mgrade" type="text" />
+      <input id="mgrade" type="text" tabindex="3" />
     </li>
     <li class="clear">
       <label for="scigrade">Enter Science Grade<span class="hint"> Options: A+, A, B+, B, C+, C, D+, D, E, N</span></label>
@@ -36,16 +36,16 @@
     </li>
     <li class="clear">
       <label for="socgrade">Enter Social Grade<span class="hint"> Options: A+, A, B+, B, C+, C, D+, D, E, N</span></label>
-      <input id="socgrade" type="text" />
+      <input id="socgrade" type="text" tabindex="4" />
     </li>
     <li class="clear">
       <label for="gpa">Enter GPA<span class="hint"> GPA are in number form</span></label>
-      <input id="gpa" type="text" onkeypress="return isNumberKey(event)" />
+      <input id="gpa" type="text" onkeypress="return isNumberKey(event)" tabindex="5" />
     </li>
     <footer>
       <p class="half" id="demo"style="text-align:left">Your answer will appear here!!!</p>
-      <button class="hvr-hang" type="button" onclick="checkFunction()">Submit</button>
-      <button class="hvr-hang" type="button" onclick="resetValues()">Reset</button>
+      <button class="hvr-hang" type="button" onclick="checkFunction()" tabindex="6">Submit</button>
+      <button class="hvr-hang" type="button" onclick="resetValues()" tabindex="7">Reset</button>
 
     </footer>
   </ul>
