@@ -1,58 +1,99 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-  <script src="javascripts/main.js"></script>
-     <link rel="stylesheet" type="text/css" href="stylesheets/mobilefirst.css">
-  <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="stylesheets/magic.css">
-  <link href="stylesheets/hover-min.css" rel="stylesheet" media="all">
-  <script src="//fast.eager.io/Mt-IiCy9Dp.js"></script>
+    <meta charset="UTF-8">
+    <title>Example of Bootstrap 3 Horizontal Form Layout</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="//fast.eager.io/Mt-IiCy9Dp.js"></script>
   <script src="javascripts/shepherd.js"></script>
-</head>
-<body>
-  <div class="wrapper">
-  <h1>Eligibility Checker!!</h1>
-  <script>
-  $('.wrapper').hover(function () {
-    $(this).addClass('magictime puffIn');
-  });
-  </script>
-  <h3 class="form-title">Check your eligibility!</h3>
-  <form name="test" autocomplete="off">
-    <ul id="contact">
-    <li class="clear">
-      <label for="egrade">Enter English Grade<span class="hint"> Options: A+, A, B+, B, C+, C, D+, D, E, N</span></label>
-      <input id="egrade" type="text" tabindex="1" />
-    </li>
-    <li class="clear">
-      <label for="ngrade">Enter Nepali Grade<span class="hint"> Options: A+, A, B+, B, C+, C, D+, D, E, N</span></label>
-      <input id="ngrade" type="text" tabindex="2" />
-    </li>
-    <li class="clear">
-      <label for="mgrade">Enter Math Grade <span class="hint"> Options: A+, A, B+, B, C+, C, D+, D, E, N</span></label>
-      <input id="mgrade" type="text" tabindex="3" />
-    </li>
-    <li class="clear">
-      <label for="scigrade">Enter Science Grade<span class="hint"> Options: A+, A, B+, B, C+, C, D+, D, E, N</span></label>
-      <input id="scigrade" type="text" tabindex="4" />
-    </li>
-    <li class="clear">
-      <label for="socgrade">Enter Social Grade<span class="hint"> Options: A+, A, B+, B, C+, C, D+, D, E, N</span></label>
-      <input id="socgrade" type="text" tabindex="5" />
-    </li>
-    <li class="clear">
-      <label for="gpa">Enter GPA<span class="hint"> GPA are in number form</span></label>
-      <input id="gpa" type="text" onkeypress="return isNumberKey(event)" tabindex="6" />
-    </li>
-    <footer>
-      <p class="half" id="demo"style="text-align:left">Your answer will appear here!!!</p>
-      <button class="hvr-hang" id="submit" type="button" onclick="checkFunction()" tabindex="7">Submit</button>
-      <button class="hvr-hang" id="reset" type="button" onclick="resetValues()" tabindex="8">Reset</button>
+    <style type="text/css">
+        .bs-example{
+        	margin: 20px;
+        }
+    	/* Fix alignment issue of label on extra small devices in Bootstrap 3.2 */
+        .form-horizontal .control-label{
+            padding-top: 7px;
+        }
+    </style>
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div class="container" style="height:100%;width:100%;border:1px solid gray;padding:8px;background:#e1efbb url('mountain.jpg')">
+  	   <section class="container">
+  		     <h1>Check your eligibility for joining computer classes </h1>
+    	     <div class="container-page">
+      	      <div class="col-lg-6">
+      		          <h3 class="dark-grey">Enter your grades</h3>
+    				        <form role="form" name="myForm" id="myForm"  method="post" autocomplete="off">
+                      <div class="row">
+    					            <div class="form-group col-lg-6">
+    						                   <label>English Grade</label>
+    						                   <input type="text" class="form-control" id="egrade" placeholder="A+, A, B+, B, C+, C, D+, D, E, N"/>
+    					            </div>
+    					            <div class="form-group col-lg-6">
+    						                  <label>Nepali Grade</label>
+    						                  <input type="text" class="form-control" id="ngrade" placeholder="A+, A, B+, B, C+, C, D+, D, E, N"/>
+    					            </div>
+                      </div>
+                      <div class="row">
+        				          <div class="form-group col-lg-6">
+        					               <label>Maths Grade</label>
+        					               <input type="text" class="form-control" id="mgrade" placeholder="A+, A, B+, B, C+, C, D+, D, E, N"/>
+        				          </div>
+        				          <div class="form-group col-lg-6">
+        					               <label>Science Grade</label>
+        					               <input type="text" name="" class="form-control" id="scigrade" placeholder="A+, A, B+, B, C+, C, D+, D, E, N"/>
+        				          </div>
+                      </div>
+                      <div class="row">
+        				          <div class="form-group col-lg-6">
+        					               <label>Social Studies Grade</label>
+        					               <input type="text" class="form-control" id="socgrade" placeholder="A+, A, B+, B, C+, C, D+, D, E, N"/>
+        				          </div>
+        				          <div class="form-group col-lg-6">
+        					               <label>GPA </label>
+        					               <input type="text" class="form-control" id="gpa" onkeypress="return isNumberKey(event)" placeholder=" Enter your grade point average"/>
+        				          </div>
+                      </div>
+                      <div class="col-md-6 text-center">
+    						                  <button type="button" class="btn  btn-success col-md-6 btn-block" onclick="checkFunction()">Submit</button>
 
-    </footer>
-  </ul>
-  </form>
-  </div>
-</body>
+                        </div>
+                        <div class="col-md-6 text-center">
+                                    <button type="button" class="btn  btn-danger  col-md-6 btn-block" onclick="resetForm()">Reset</button>
+                          </div>
+                      <div class="row">
+                          <div class="col-md-12">
+                            <label></label>
+                            <p id="demo"class="bg-danger"></p>
+                          </div>
+                      </div>
+    				        </form>
+        		  </div>
+              <div class="col-md-6">
+    				        <h3 class="dark-grey">About this application</h3>
 
+                    <div style="width:100%;border:1px solid gray;padding:8px;background:#e1efbb url('mountain.jpg')">
+    				        <p class="text-justify">
+    					             This application asks for your slc grades and then calculates your eligibility to join computer science classes in management stream.
+    					             Government of Nepal has set up certian criterion you have to fall into in order to do so.
+    				        </p>
+    				        <p class="text-justify">
+    					             I have found that many students are still confused about their choices. This application attempts to address students confusion.
+    				        </p>
+    				        <p class="text-justify">
+    					             Acceptance of an order by us is dependent on our suppliers ability to provide the product. (Paragraph 13.5.6)
+    				        </p>
+                    <p class="bg-primary" id="demo">
+                           Tldr; By clicking Submit you will get the answer.
+                    </p>
+                  </div>
+    			    </div>
+    		   </div>
+    	 </section>
+    </div>
+  </body>
 </html>
