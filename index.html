@@ -25,8 +25,14 @@
              padding-top: 70px;
              padding-bottom: 70px;
          }
+         
     </style>
     <script src="javascripts/main.js"></script>
+    <script>
+      $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+   </script>
   </head>
   <body>
     <div class="container" style="height:100%;width:100%;border:1px solid gray;padding:8px;background:#e1efbb url('images/mountain.jpg')">
@@ -39,31 +45,31 @@
                       <div class="row">
     					            <div class="form-group col-lg-6">
     						                   <label>English Grade</label>
-    						                   <input type="text" class="form-control" id="egrade" placeholder="A+, A, B+, B, C+, C, D+, D, E, N"/>
+    						                   <input type="text" class="form-control" id="egrade" placeholder="A+, A, B+, B, C+, C, D+, D, E, N" data-toggle="tooltip" title="Enter your English Grade"/>
     					            </div>
     					            <div class="form-group col-lg-6">
     						                  <label>Nepali Grade</label>
-    						                  <input type="text" class="form-control" id="ngrade" placeholder="A+, A, B+, B, C+, C, D+, D, E, N"/>
+    						                  <input type="text" class="form-control" id="ngrade" placeholder="A+, A, B+, B, C+, C, D+, D, E, N" data-toggle="tooltip" title="Enter your Nepali Grade"/>
     					            </div>
                       </div>
                       <div class="row">
         				          <div class="form-group col-lg-6">
         					               <label>Maths Grade</label>
-        					               <input type="text" class="form-control" id="mgrade" placeholder="A+, A, B+, B, C+, C, D+, D, E, N"/>
+        					               <input type="text" class="form-control" id="mgrade" placeholder="A+, A, B+, B, C+, C, D+, D, E, N" data-toggle="tooltip" title="Enter your Maths Grade"/>
         				          </div>
         				          <div class="form-group col-lg-6">
         					               <label>Science Grade</label>
-        					               <input type="text" name="" class="form-control" id="scigrade" placeholder="A+, A, B+, B, C+, C, D+, D, E, N"/>
+        					               <input type="text" name="" class="form-control" id="scigrade" placeholder="A+, A, B+, B, C+, C, D+, D, E, N" data-toggle="tooltip" title="Enter your Science Grade"/>
         				          </div>
                       </div>
                       <div class="row">
         				          <div class="form-group col-lg-6">
         					               <label>Social Studies Grade</label>
-        					               <input type="text" class="form-control" id="socgrade" placeholder="A+, A, B+, B, C+, C, D+, D, E, N"/>
+        					               <input type="text" class="form-control" id="socgrade" placeholder="A+, A, B+, B, C+, C, D+, D, E, N" data-toggle="tooltip" title="Enter your Social Studies Grade"/>
         				          </div>
         				          <div class="form-group col-lg-6">
         					               <label>GPA </label>
-        					               <input type="text" class="form-control" id="gpa" onkeypress="return isNumberKey(event)" placeholder=" Enter your grade point average"/>
+        					               <input type="text" class="form-control" id="gpa" onkeypress="return isNumberKey(event)" placeholder=" Enter your grade point average" data-toggle="tooltip" title="Enter your GPA"/>
         				          </div>
                       </div>
                       <div class="col-md-6 text-center">
